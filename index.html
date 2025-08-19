@@ -75,6 +75,38 @@
     .tagline span:hover {
       color: #fff;
     }
+    .petition-image-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      animation: fadein 1.6s;
+    }
+    .petition-image {
+      max-width: 50%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.16);
+      transition: box-shadow 0.2s;
+    }
+    .petition-image-link:hover .petition-image {
+      box-shadow: 0 4px 24px 2px #36a2ff44, 0 2px 14px rgba(0,0,0,0.23);
+    }
+    .petition-plain-link {
+      display: inline-block;
+      color: #8cccff;
+      text-decoration: underline;
+      font-weight: normal;
+      font-size: 1.08rem;
+      margin-top: 1.2rem;
+      transition: color 0.2s;
+      background: none;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    .petition-plain-link:hover {
+      color: #aae9ff;
+    }
   </style>
 </head>
 <body>
@@ -84,6 +116,13 @@
     <p class="tagline">
       dad <span>/</span> developer <span>/</span> snowboarder <span>/</span> kitesurfer
     </p>
+    <a class="petition-image-link" href="https://chng.it/JxkNfN5xtQ" target="_blank" rel="noopener">
+      <img class="petition-image" src="https://stopchatcontrol.eu/wp-content/uploads/2023/09/1-1.png" alt="Petition Image">
+    </a>
+    <br>
+    <a class="petition-plain-link" href="https://chng.it/JxkNfN5xtQ" target="_blank" rel="noopener">
+      Sign the Petition
+    </a>
   </main>
 </body>
 </html>
